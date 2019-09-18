@@ -3,8 +3,8 @@ const path = require('path');
 
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const htmlPlugin = new HtmlWebpackPlugin({
-    template:path.join(__dirname,'./src/index.html'),// 需要生成的HTML的模板文件
-    filename:'index.html' // 生成的HTML文件的名称
+    template:path.join(__dirname,'./src/index.html'),// 需要生成的HTML的模板文件的路径
+    filename:'index.html' // 生成后HTML文件的名称
 })//注意:用插件生成的html文件会存在于内存中,而不是我们的磁盘中!,且它会自动引入打包后的main.js文件
 
 module.exports ={
